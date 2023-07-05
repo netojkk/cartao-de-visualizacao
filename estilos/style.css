@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+
+main {
+    height: 100vh;
+}
+
+.conteiner {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section {
+    height: 60vh;
+    width: 43vw;
+
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px 0px 0px 10px;
+}
+
+div.img {
+    height: 60vh;
+    width: 33vw;
+
+   
+    
+    
+    background-image: url(../images/image-header-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0px 10px 10px 0px;
+}
+
+h1 {
+    color: white;
+    font-weight: 600;
+    font-size: 2.2em;
+}
+
+strong {
+    color: hsl(277, 64%, 61%);
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.main-t {
+    padding: 4em 6em 4em 4em;
+}
+
+.description {
+    margin-top: 2em;
+    
+}
+.description p {
+    text-align: start;
+}
+
+.numeros {
+    width: 30vw;
+
+    margin-top: 3.5em;
+    margin-bottom: 1em;
+     
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    
+
+}
+.numeros .hs {
+    color: white;
+    font-size: 1.2em;
+}
+.numeros p {
+    margin-top: .5em;
+    text-transform: uppercase;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: .9em;
+}
+@media screen and (max-width:1076px) {
+    .main-t {
+        padding: 3em 6em 4em 4em;
+
+    }
+}
+@media screen and (max-width: 992px) {
+    .main-t {
+        padding: 3em;
+
+    }
+    h1 {
+        color: white;
+        font-weight: 600;
+        font-size: 2.2em;
+    }
+}
+@media screen and (max-width: 870px) {
+    .main-t {
+        padding: 2em 1em 2em 2em; 
+
+    }
+    p {
+        font-size: .9em;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    body {
+        
+        margin: 5em 0px;
+    }
+    .conteiner {
+
+        display: flex;
+        flex-direction: column;
+        
+    }
+    section {
+        height: 80vh;
+        width: 75vw;
+        
+
+        border-radius: 0px 0px 10px 10px;
+    }
+    div.img {
+        background-image: url(../images/image-header-mobile.jpg);
+
+
+        height: 110vh;
+        width: 75vw;
+        border-radius: 10px 10px 0px 0px;
+        order: -1;
+        
+    }
+    .main-t {
+        padding: 3em;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        text-align: center;
+        font-size: 2.5em;
+    }
+   .description p {
+        text-align: center;
+        font-size: 1.2em;
+    }
+    .numeros {
+        height: 100%;
+         
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .n2 {
+        margin: 1.5em 0px;
+    }
+}
