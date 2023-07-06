@@ -71,7 +71,7 @@ body {
 .conteiner .card p {
     margin: 2.5em 0px;
     font-weight: 400;
-    font-family: 'Lexend Deca', sans-serif; 
+    font-family: 'Inter', sans-serif; 
 }
 .conteiner .card ul li > span {
     display: block;
@@ -92,5 +92,89 @@ body {
     color: var(--branco-estatistica);
 
 
-    margin: 30px 0px;
+    
 }
+.card .li-center {
+    padding: 20px 0px;
+}
+
+@media screen and (min-width:768px) {
+    body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .conteiner {
+        padding: 0px;
+        display: flex;
+    }
+    .conteiner .card-picture {
+        background-image: url(../images/image-header-desktop.jpg);
+        width: 50%;  
+        border-radius:10px 0px 0px 10px ;
+    }
+    .conteiner .card-overlay{
+        border-radius: 10px 0px 0px 10px ;
+    }
+    
+    .conteiner .card h1 {
+        font-size: 1.5em;
+    }
+    .conteiner .card {
+        padding: 4em 2em 0px 2em;
+        margin: 0px 0px;
+        width: 50%;
+    }
+    .conteiner .card p {
+        margin: 1em 0px 2em 0px;
+    }
+    .conteiner .card ul {
+        margin-top: 0px;
+        padding-left: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .conteiner .card ul li {
+        
+        font-size: 14px;
+    }
+    .conteiner .card ul li span {
+        
+    }
+}
+@media (min-width:992px){
+    .conteiner {
+        flex-direction: row-reverse;
+    }
+    .conteiner .card-picture {
+         
+        border-radius: 0px 10px 10px 0px ;
+    }
+    .conteiner .card-overlay{
+        border-radius: 0px 10px 10px 0px ;
+    }
+    .conteiner .card {
+        text-align: left;
+        padding-left:50px;
+        padding-right:50px;
+    }
+    .conteiner .card h1 {
+        font-size: 2em;
+    }
+    .conteiner .card p {
+        margin: 1em 0px 3em 0px;
+    }
+    .conteiner .card ul {
+        padding-left: 0;
+        padding-right: 50px;
+        
+    }
+    .conteiner .card ul li span {
+        font-size: 22px;   
+    }
+}
+
+    
